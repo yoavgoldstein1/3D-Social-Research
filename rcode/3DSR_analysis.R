@@ -65,6 +65,15 @@ scripted_check_list <-
 scripted_videos <- TRUE %in% scripted_check_list
 
 
+###****************************************** ###
+#####    DEFINE COLOR SCHEME FOR FIGURES    #####
+###****************************************** ###
+
+color_blind_figure3_5_6 <- c("#F0E442", "#CC79A7")
+
+color_blind_figure7 <- c("#F0E442", "#CC79A7", "#56B4E9", "#009E73")
+
+
 ###****************************************************************************** ###
 ##### FIGURE 2s: Distance between two individuals’ thorax keypoints over frames #####
 ###****************************************************************************** ###
@@ -236,7 +245,10 @@ figure_threes <- function(df, name) {
     ) +
     scale_color_discrete(
       name = "",
-      labels = c("Person 1", "Person 2")
+      labels = c("Person 1", "Person 2"),
+      type = color_blind_figure3_5_6
+    ) +
+    guides(color = guide_legend(override.aes = list(fill = "#FFFFFF"))
     ) +
     theme(
       axis.text.x = element_blank(),
@@ -406,7 +418,10 @@ create_figure_five <- function(df) {
     ) +
     scale_color_discrete(
       name = "",
-      labels = c("Person 1", "Person 2")
+      labels = c("Person 1", "Person 2"), 
+      type = color_blind_figure3_5_6
+    ) +
+    guides(color = guide_legend(override.aes = list(fill = "#FFFFFF"))
     ) +
     theme(
       axis.text.x = element_blank(),
@@ -528,6 +543,7 @@ create_figure_six <- function(df, first_frame) {
       text = element_text(size = 20)
     ) +
     facet_grid(. ~ pid, labeller = labeller(pid = pid_labs)) +
+    scale_color_discrete(type = color_blind_figure3_5_6) +
     guides(color = NULL)
 }
 
@@ -620,7 +636,9 @@ create_figure_seven <- function(df, first_frame) {
       "Head",
       "Legs",
       "Torso"
-    ))
+    ),
+      type = color_blind_figure7) +
+    guides(color = guide_legend(override.aes = list(fill = "#FFFFFF")))
 }
 
 
