@@ -41,8 +41,8 @@ Run the steps below in a MacOS/ Linux Terminal session:
 
 1. Clone the repository, navigate to the 3DSR folder, and create relevant directories (each line is a new command). The git command will ask for your github username and token:
     ```
-    git clone https://github.com/yoavgoldstein1/3DSR
-    cd 3DSR
+    git clone https://github.com/yoavgoldstein1/3D-Social-Research
+    cd 3D-Social-Research
     mkdir Inputs
     mkdir Outputs
     ```
