@@ -2,6 +2,7 @@
 
 ![](/Resources/3D_Social_Research_Figure3.gif)
 ![](/Resources/Skeleton.png)
+![](/Resources/Goldstein_etal_figure7.jpg)
 
 
 Video data offer important insights into social processes because they enable direct observation of real-life social interaction. “3D Social Research” (3DSR) uses Computer Vision (CV) and 3D camera footage to study kinesics and proxemics, two core elements of social interaction. 3DSR is especially useful for analyzing physical distance, movement in space, and movement rate. For a fuller explanation of 3DSR, its role in research on social interaction, and a discussion of its capabilities and limitations, see Goldstein, Legewie, and Shiffer-Sebba, 2022.
