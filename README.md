@@ -1,6 +1,6 @@
 # 3DSR - Analysis of Social Interaction Using Computer Vision #
 
-![](/Resources/3D_Social_Research_Figure3.gif)
+![](/Resources/3D_Social_Research_Figure3_colorblind.gif)
 ![](/Resources/Skeleton.png)
 ![](/Resources/Goldstein_etal_figure7.jpg)
 
